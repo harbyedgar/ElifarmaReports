@@ -161,6 +161,7 @@
     <Compile Include="Code\DBManager.cs" />
     <Compile Include="Code\DbManagerExtend.cs" />
     <Compile Include="Code\InventarioReports.cs" />
+    <Compile Include="Code\MantenimientoReports.cs" />
     <Compile Include="Code\ProduccionReports.cs" />
     <Compile Include="Code\RequestFilter.cs" />
     <Compile Include="Code\WebUtils.cs" />
@@ -174,6 +175,14 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dstKardexValorizado.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dstMantenimiento.cs">
+      <DependentUpon>dstMantenimiento.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dstMantenimiento.Designer.cs">
+      <DependentUpon>dstMantenimiento.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Models\dstProduccion.cs">
       <DependentUpon>dstProduccion.xsd</DependentUpon>
@@ -206,6 +215,13 @@
       <SubType>Component</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
+    <Compile Include="Reports\rptOrdenTrabajo.cs">
+      <DependentUpon>rptOrdenTrabajo.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Reports\rptPrograma_Produccion.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -232,6 +248,17 @@
     </None>
     <Content Include="Models\dstKardexValorizado.xss">
       <DependentUpon>dstKardexValorizado.xsd</DependentUpon>
+    </Content>
+    <Content Include="Models\dstMantenimiento.xsc">
+      <DependentUpon>dstMantenimiento.xsd</DependentUpon>
+    </Content>
+    <None Include="Models\dstMantenimiento.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dstMantenimiento.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Models\dstMantenimiento.xss">
+      <DependentUpon>dstMantenimiento.xsd</DependentUpon>
     </Content>
     <None Include="Models\dstProduccion.xsd">
       <Generator>MSDataSetGenerator</Generator>
@@ -262,6 +289,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Reports\Mantenimiento\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -285,6 +313,11 @@
     <EmbeddedResource Include="Reports\rptKardexValorizadoxOp.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptKardexValorizadoxOp.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptOrdenTrabajo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptOrdenTrabajo.cs</LastGenOutput>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\rptPrograma_Produccion.rpt">
