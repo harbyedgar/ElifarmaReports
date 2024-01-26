@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dstProduccion" targetNamespace="http://tempuri.org/dstProduccion.xsd" xmlns:mstns="http://tempuri.org/dstProduccion.xsd" xmlns="http://tempuri.org/dstProduccion.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dstProduccion" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dstProduccion" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dstProduccion">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ProgramaProduccion" msprop:Generator_RowClassName="ProgramaProduccionRow" msprop:Generator_RowEvHandlerName="ProgramaProduccionRowChangeEventHandler" msprop:Generator_RowDeletedName="ProgramaProduccionRowDeleted" msprop:Generator_RowDeletingName="ProgramaProduccionRowDeleting" msprop:Generator_RowEvArgName="ProgramaProduccionRowChangeEvent" msprop:Generator_TablePropName="ProgramaProduccion" msprop:Generator_RowChangedName="ProgramaProduccionRowChanged" msprop:Generator_UserTableName="ProgramaProduccion" msprop:Generator_RowChangingName="ProgramaProduccionRowChanging" msprop:Generator_TableClassName="ProgramaProduccionDataTable" msprop:Generator_TableVarName="tableProgramaProduccion">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="pprog_id_registro" msprop:Generator_UserColumnName="pprog_id_registro" msprop:Generator_ColumnPropNameInTable="pprog_id_registroColumn" msprop:Generator_ColumnPropNameInRow="pprog_id_registro" msprop:Generator_ColumnVarNameInTable="columnpprog_id_registro" type="xs:string" />
+              <xs:element name="pprog_c_registro" msprop:Generator_UserColumnName="pprog_c_registro" msprop:Generator_ColumnPropNameInTable="pprog_c_registroColumn" msprop:Generator_ColumnPropNameInRow="pprog_c_registro" msprop:Generator_ColumnVarNameInTable="columnpprog_c_registro" type="xs:string" minOccurs="0" />
+              <xs:element name="pprog_f_dia" msprop:Generator_UserColumnName="pprog_f_dia" msprop:Generator_ColumnPropNameInTable="pprog_f_diaColumn" msprop:Generator_ColumnPropNameInRow="pprog_f_dia" msprop:Generator_ColumnVarNameInTable="columnpprog_f_dia" type="xs:string" minOccurs="0" />
+              <xs:element name="pprog_f_registro" msprop:Generator_UserColumnName="pprog_f_registro" msprop:Generator_ColumnPropNameInTable="pprog_f_registroColumn" msprop:Generator_ColumnPropNameInRow="pprog_f_registro" msprop:Generator_ColumnVarNameInTable="columnpprog_f_registro" type="xs:string" minOccurs="0" />
+              <xs:element name="pprog_c_registro_man" msprop:Generator_UserColumnName="pprog_c_registro_man" msprop:Generator_ColumnPropNameInTable="pprog_c_registro_manColumn" msprop:Generator_ColumnPropNameInRow="pprog_c_registro_man" msprop:Generator_ColumnVarNameInTable="columnpprog_c_registro_man" type="xs:string" minOccurs="0" />
+              <xs:element name="pprog_f_proceso" msprop:Generator_UserColumnName="pprog_f_proceso" msprop:Generator_ColumnPropNameInTable="pprog_f_procesoColumn" msprop:Generator_ColumnPropNameInRow="pprog_f_proceso" msprop:Generator_ColumnVarNameInTable="columnpprog_f_proceso" type="xs:string" minOccurs="0" />
+              <xs:element name="t_formula" msprop:Generator_UserColumnName="t_formula" msprop:Generator_ColumnPropNameInTable="t_formulaColumn" msprop:Generator_ColumnPropNameInRow="t_formula" msprop:Generator_ColumnVarNameInTable="columnt_formula" type="xs:string" minOccurs="0" />
+              <xs:element name="pprog_n_volumen" msprop:Generator_UserColumnName="pprog_n_volumen" msprop:Generator_ColumnPropNameInTable="pprog_n_volumenColumn" msprop:Generator_ColumnPropNameInRow="pprog_n_volumen" msprop:Generator_ColumnVarNameInTable="columnpprog_n_volumen" type="xs:string" minOccurs="0" />
+              <xs:element name="c_unidad_medida" msprop:Generator_UserColumnName="c_unidad_medida" msprop:Generator_ColumnPropNameInTable="c_unidad_medidaColumn" msprop:Generator_ColumnPropNameInRow="c_unidad_medida" msprop:Generator_ColumnVarNameInTable="columnc_unidad_medida" type="xs:string" minOccurs="0" />
+              <xs:element name="pprog_n_descripcion_venta" msprop:Generator_UserColumnName="pprog_n_descripcion_venta" msprop:Generator_ColumnPropNameInTable="pprog_n_descripcion_ventaColumn" msprop:Generator_ColumnPropNameInRow="pprog_n_descripcion_venta" msprop:Generator_ColumnVarNameInTable="columnpprog_n_descripcion_venta" type="xs:string" minOccurs="0" />
+              <xs:element name="pprog_t_descripcion_venta" msprop:Generator_UserColumnName="pprog_t_descripcion_venta" msprop:Generator_ColumnPropNameInTable="pprog_t_descripcion_ventaColumn" msprop:Generator_ColumnPropNameInRow="pprog_t_descripcion_venta" msprop:Generator_ColumnVarNameInTable="columnpprog_t_descripcion_venta" type="xs:string" minOccurs="0" />
+              <xs:element name="pprog_n_descripcion_mm" msprop:Generator_UserColumnName="pprog_n_descripcion_mm" msprop:Generator_ColumnPropNameInTable="pprog_n_descripcion_mmColumn" msprop:Generator_ColumnPropNameInRow="pprog_n_descripcion_mm" msprop:Generator_ColumnVarNameInTable="columnpprog_n_descripcion_mm" type="xs:string" minOccurs="0" />
+              <xs:element name="pprog_t_descripcion_mm" msprop:Generator_UserColumnName="pprog_t_descripcion_mm" msprop:Generator_ColumnPropNameInTable="pprog_t_descripcion_mmColumn" msprop:Generator_ColumnPropNameInRow="pprog_t_descripcion_mm" msprop:Generator_ColumnVarNameInTable="columnpprog_t_descripcion_mm" type="xs:string" minOccurs="0" />
+              <xs:element name="pprog_t_observacion" msprop:Generator_UserColumnName="pprog_t_observacion" msprop:Generator_ColumnPropNameInTable="pprog_t_observacionColumn" msprop:Generator_ColumnPropNameInRow="pprog_t_observacion" msprop:Generator_ColumnVarNameInTable="columnpprog_t_observacion" type="xs:string" minOccurs="0" />
+              <xs:element name="pprog_c_lote" msprop:Generator_ColumnPropNameInRow="pprog_c_lote" msprop:Generator_ColumnPropNameInTable="pprog_c_loteColumn" msprop:Generator_ColumnVarNameInTable="columnpprog_c_lote" msprop:Generator_UserColumnName="pprog_c_lote" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ProgramaProduccion" />
+      <xs:field xpath="mstns:pprog_id_registro" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
