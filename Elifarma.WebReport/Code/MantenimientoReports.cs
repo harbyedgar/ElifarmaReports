@@ -17,7 +17,7 @@ namespace Elifarma.WebReport.Code
             {
                 string tipo = request.report + "OT_";
                 ReportDocument objReporte = new ReportDocument();
-                string report_path = WebUtils.ReportPath("rptPrograma_Produccion.rpt");
+                string report_path = WebUtils.ReportPath("rptOrdenTrabajo.rpt");
                 objReporte.Load(report_path);
                 DataSet dstDatos = new DataSet();
                 DbManager db = new DbManager();
@@ -32,9 +32,10 @@ namespace Elifarma.WebReport.Code
                 dtOrdenTrabajo.TableName = "OrdenTrabajo";
 
                 dstDatos.Tables.Add(dtOrdenTrabajo);
+                //dstDatos.Tables.Add(dtOrdenTrabajo[1]);
 
                 objReporte.SetDataSource(dstDatos);
-                string reportname = "Programa_Produccion" + ".pdf";
+                string reportname = "OrdenTrabajo" + ".pdf";
                 string reportlocation = WebUtils.get("ReportFileStorage") + "\\" + reportname;
                 objReporte.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, reportlocation);
 

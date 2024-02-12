@@ -19,6 +19,14 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="OrdenTrabajoDetalle" msprop:Generator_RowEvHandlerName="OrdenTrabajoDetalleRowChangeEventHandler" msprop:Generator_RowDeletedName="OrdenTrabajoDetalleRowDeleted" msprop:Generator_RowDeletingName="OrdenTrabajoDetalleRowDeleting" msprop:Generator_RowEvArgName="OrdenTrabajoDetalleRowChangeEvent" msprop:Generator_TablePropName="OrdenTrabajoDetalle" msprop:Generator_RowChangedName="OrdenTrabajoDetalleRowChanged" msprop:Generator_RowChangingName="OrdenTrabajoDetalleRowChanging" msprop:Generator_TableClassName="OrdenTrabajoDetalleDataTable" msprop:Generator_RowClassName="OrdenTrabajoDetalleRow" msprop:Generator_TableVarName="tableOrdenTrabajoDetalle" msprop:Generator_UserTableName="OrdenTrabajoDetalle">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OrdenTrabajoDiagnostico" msprop:Generator_RowEvHandlerName="OrdenTrabajoDiagnosticoRowChangeEventHandler" msprop:Generator_RowDeletedName="OrdenTrabajoDiagnosticoRowDeleted" msprop:Generator_RowDeletingName="OrdenTrabajoDiagnosticoRowDeleting" msprop:Generator_RowEvArgName="OrdenTrabajoDiagnosticoRowChangeEvent" msprop:Generator_TablePropName="OrdenTrabajoDiagnostico" msprop:Generator_RowChangedName="OrdenTrabajoDiagnosticoRowChanged" msprop:Generator_RowChangingName="OrdenTrabajoDiagnosticoRowChanging" msprop:Generator_TableClassName="OrdenTrabajoDiagnosticoDataTable" msprop:Generator_RowClassName="OrdenTrabajoDiagnosticoRow" msprop:Generator_TableVarName="tableOrdenTrabajoDiagnostico" msprop:Generator_UserTableName="OrdenTrabajoDiagnostico">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
