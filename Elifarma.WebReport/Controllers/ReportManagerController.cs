@@ -15,8 +15,6 @@ namespace Elifarma.WebReport.Controllers
             ProduccionReports objProduccionReports = new ProduccionReports();
             InventarioReports objInventarioReports = new InventarioReports();
             MantenimientoReports objMantenimientoReports = new MantenimientoReports();
-
-
             ReportFile reportefile = new ReportFile();
 
             if (request.report.ToUpper() == "PROGRAMAPRODUCCION")
@@ -27,7 +25,7 @@ namespace Elifarma.WebReport.Controllers
             {
                 reportefile = objInventarioReports.KardexValorizado(request);
             }
-            else if (request.report.ToUpper() == "ORDENTRABAJOMANTENIMIENTO")
+            else if (request.report.ToUpper() == "ORDENTRABAJO")
             {
                 reportefile = objMantenimientoReports.OrdenTrabajo(request);
             }

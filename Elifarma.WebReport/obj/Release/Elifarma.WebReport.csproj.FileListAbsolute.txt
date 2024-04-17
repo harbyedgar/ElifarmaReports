@@ -1,4 +1,12 @@
+D:\REPORTES WEBELIFARMA\Elifarma.WebReport\bin\Reports\rptKardexValorizado.rpt
+D:\REPORTES WEBELIFARMA\Elifarma.WebReport\bin\Reports\rptKardexValorizadoResumen.rpt
+D:\REPORTES WEBELIFARMA\Elifarma.WebReport\bin\Reports\rptKardexValorizadoxOp.rpt
+D:\REPORTES WEBELIFARMA\Elifarma.WebReport\bin\Reports\rptOrdenTrabajo.rpt
 D:\REPORTES WEBELIFARMA\Elifarma.WebReport\bin\Reports\rptPrograma_Produccion.rpt
+D:\REPORTES WEBELIFARMA\Elifarma.WebReport\bin\Reports\rptKardexValorizado.cs
+D:\REPORTES WEBELIFARMA\Elifarma.WebReport\bin\Reports\rptKardexValorizadoResumen.cs
+D:\REPORTES WEBELIFARMA\Elifarma.WebReport\bin\Reports\rptKardexValorizadoxOp.cs
+D:\REPORTES WEBELIFARMA\Elifarma.WebReport\bin\Reports\rptOrdenTrabajo.cs
 D:\REPORTES WEBELIFARMA\Elifarma.WebReport\bin\Reports\rptPrograma_Produccion.cs
 D:\REPORTES WEBELIFARMA\Elifarma.WebReport\bin\Elifarma.WebReport.dll.config
 D:\REPORTES WEBELIFARMA\Elifarma.WebReport\bin\Elifarma.WebReport.dll
@@ -104,9 +112,3 @@ D:\REPORTES WEBELIFARMA\Elifarma.WebReport\obj\Release\Elifarma.WebReport.csproj
 D:\REPORTES WEBELIFARMA\Elifarma.WebReport\obj\Release\Elifarma.WebReport.csproj.CopyComplete
 D:\REPORTES WEBELIFARMA\Elifarma.WebReport\obj\Release\Elifarma.WebReport.dll
 D:\REPORTES WEBELIFARMA\Elifarma.WebReport\obj\Release\Elifarma.WebReport.pdb
-D:\REPORTES WEBELIFARMA\Elifarma.WebReport\bin\Reports\rptKardexValorizado.rpt
-D:\REPORTES WEBELIFARMA\Elifarma.WebReport\bin\Reports\rptKardexValorizadoResumen.rpt
-D:\REPORTES WEBELIFARMA\Elifarma.WebReport\bin\Reports\rptKardexValorizadoxOp.rpt
-D:\REPORTES WEBELIFARMA\Elifarma.WebReport\bin\Reports\rptKardexValorizado.cs
-D:\REPORTES WEBELIFARMA\Elifarma.WebReport\bin\Reports\rptKardexValorizadoResumen.cs
-D:\REPORTES WEBELIFARMA\Elifarma.WebReport\bin\Reports\rptKardexValorizadoxOp.cs

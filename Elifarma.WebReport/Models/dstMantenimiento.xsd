@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dstProduccion" targetNamespace="http://tempuri.org/dstProduccion.xsd" xmlns:mstns="http://tempuri.org/dstProduccion.xsd" xmlns="http://tempuri.org/dstProduccion.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dstProduccion" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dstProduccion" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dstProduccion">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OrdenTrabajo" msprop:Generator_RowEvHandlerName="OrdenTrabajoRowChangeEventHandler" msprop:Generator_RowDeletedName="OrdenTrabajoRowDeleted" msprop:Generator_RowDeletingName="OrdenTrabajoRowDeleting" msprop:Generator_RowEvArgName="OrdenTrabajoRowChangeEvent" msprop:Generator_TablePropName="OrdenTrabajo" msprop:Generator_RowChangedName="OrdenTrabajoRowChanged" msprop:Generator_UserTableName="OrdenTrabajo" msprop:Generator_RowChangingName="OrdenTrabajoRowChanging" msprop:Generator_RowClassName="OrdenTrabajoRow" msprop:Generator_TableClassName="OrdenTrabajoDataTable" msprop:Generator_TableVarName="tableOrdenTrabajo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="pprog_id_registro" msprop:Generator_ColumnPropNameInTable="pprog_id_registroColumn" msprop:Generator_ColumnPropNameInRow="pprog_id_registro" msprop:Generator_UserColumnName="pprog_id_registro" msprop:Generator_ColumnVarNameInTable="columnpprog_id_registro" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:OrdenTrabajo" />
+      <xs:field xpath="mstns:pprog_id_registro" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
