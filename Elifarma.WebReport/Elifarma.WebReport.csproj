@@ -160,6 +160,7 @@
     <Compile Include="Code\ArchivoZip.cs" />
     <Compile Include="Code\DBManager.cs" />
     <Compile Include="Code\DbManagerExtend.cs" />
+    <Compile Include="Code\MantenimientoReports.cs" />
     <Compile Include="Code\InventarioReports.cs" />
     <Compile Include="Code\ProduccionReports.cs" />
     <Compile Include="Code\RequestFilter.cs" />
@@ -183,8 +184,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dstProduccion.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Models\dtsMantenimiento.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtsMantenimiento.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Models\ReportFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\rptDocumentosPorPagarTesoreria.cs">
+      <DependentUpon>rptDocumentosPorPagarTesoreria.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Reports\rptKardexValorizado.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -206,12 +217,38 @@
       <SubType>Component</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
+    <Compile Include="Reports\rptOdenTrabajoMantenimiento.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptOdenTrabajoMantenimiento.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptDetracciones.cs">
+      <DependentUpon>rptDetracciones.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\rptRetenciones.cs">
+      <DependentUpon>rptRetenciones.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\rptProgramacionPagos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptProgramacionPagos.rpt</DependentUpon>
+    </Compile>
     <Compile Include="Reports\rptPrograma_Produccion.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rptPrograma_Produccion.rpt</DependentUpon>
       <SubType>Component</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Reports\rptRegistroCompra.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptRegistroCompra.rpt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -240,6 +277,17 @@
     </None>
     <Content Include="Models\dstProduccion.xss">
       <DependentUpon>dstProduccion.xsd</DependentUpon>
+    </Content>
+    <Content Include="Models\dtsMantenimiento.xsc">
+      <DependentUpon>dtsMantenimiento.xsd</DependentUpon>
+    </Content>
+    <None Include="Models\dtsMantenimiento.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtsMantenimiento.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Models\dtsMantenimiento.xss">
+      <DependentUpon>dtsMantenimiento.xsd</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -272,6 +320,10 @@
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Reports\rptDocumentosPorPagarTesoreria.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDocumentosPorPagarTesoreria.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\rptKardexValorizado.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptKardexValorizado.cs</LastGenOutput>
@@ -287,10 +339,30 @@
       <LastGenOutput>rptKardexValorizadoxOp.cs</LastGenOutput>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptOdenTrabajoMantenimiento.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptOdenTrabajoMantenimiento.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptDetracciones.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDetracciones.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptRetenciones.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptRetenciones.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptProgramacionPagos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptProgramacionPagos.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\rptPrograma_Produccion.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptPrograma_Produccion.cs</LastGenOutput>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptRegistroCompra.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptRegistroCompra.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -42,6 +42,7 @@ namespace Elifarma.WebReport.Code
         public int LP_SALTO_OP_X_PAGINA { get; set; }
         public string  LP_RELACION_LOTE { get; set; }
         public string LP_RELACION_ID_TRANSACCION { get; set; }
+        public string LP_NUM_OT { get; set; }
 
     }
 }

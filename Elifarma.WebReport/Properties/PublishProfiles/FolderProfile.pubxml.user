@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>D:\RELEASE REPORTES</_PublishTargetUrl>
-    <History>True|2024-01-09T14:46:09.9017635Z;True|2024-01-08T16:04:59.7232923-05:00;True|2024-01-08T15:38:59.3294166-05:00;True|2024-01-08T08:03:32.2371848-05:00;True|2023-12-15T16:00:10.9363169-05:00;True|2023-10-24T07:23:19.8857293-05:00;True|2023-10-06T12:54:35.3044800-05:00;True|2023-10-05T11:14:28.4552025-05:00;True|2023-08-31T12:41:25.7215050-05:00;True|2023-08-31T12:18:07.1565102-05:00;True|2023-08-31T10:04:24.8639972-05:00;True|2023-04-18T12:07:15.0119710-05:00;True|2023-04-18T12:03:13.9412384-05:00;True|2023-01-25T16:22:38.6792972-05:00;</History>
+    <History>True|2024-02-29T20:47:36.8265978Z;True|2024-01-09T09:46:09.9017635-05:00;True|2024-01-08T16:04:59.7232923-05:00;True|2024-01-08T15:38:59.3294166-05:00;True|2024-01-08T08:03:32.2371848-05:00;True|2023-12-15T16:00:10.9363169-05:00;True|2023-10-24T07:23:19.8857293-05:00;True|2023-10-06T12:54:35.3044800-05:00;True|2023-10-05T11:14:28.4552025-05:00;True|2023-08-31T12:41:25.7215050-05:00;True|2023-08-31T12:18:07.1565102-05:00;True|2023-08-31T10:04:24.8639972-05:00;True|2023-04-18T12:07:15.0119710-05:00;True|2023-04-18T12:03:13.9412384-05:00;True|2023-01-25T16:22:38.6792972-05:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
@@ -70,10 +70,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/25/2023 16:22:36</publishTime>
     </File>
     <File Include="bin/Elifarma.WebReport.dll">
-      <publishTime>01/09/2024 09:46:05</publishTime>
+      <publishTime>02/29/2024 15:47:33</publishTime>
     </File>
     <File Include="bin/Elifarma.WebReport.pdb">
-      <publishTime>01/09/2024 09:46:05</publishTime>
+      <publishTime>02/29/2024 15:47:33</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>03/02/2023 20:24:04</publishTime>
@@ -169,7 +169,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/25/2023 16:18:56</publishTime>
     </File>
     <File Include="bin/Reports/rptKardexValorizado.cs">
-      <publishTime>01/09/2024 09:36:52</publishTime>
+      <publishTime>02/29/2024 09:39:48</publishTime>
     </File>
     <File Include="bin/Reports/rptKardexValorizado.rpt">
       <publishTime>01/09/2024 09:36:51</publishTime>
@@ -193,10 +193,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/25/2023 07:22:08</publishTime>
     </File>
     <File Include="bin/Reports/rptPrograma_Produccion.cs">
-      <publishTime>10/24/2023 07:21:20</publishTime>
+      <publishTime>02/15/2024 11:25:00</publishTime>
     </File>
     <File Include="bin/Reports/rptPrograma_Produccion.rpt">
-      <publishTime>10/24/2023 07:21:19</publishTime>
+      <publishTime>02/15/2024 11:24:57</publishTime>
     </File>
     <File Include="bin/Reports/subReportCharge.cs">
       <publishTime>01/26/2022 14:24:44</publishTime>
@@ -396,6 +396,12 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Models/dstShippingInstruction.xss">
       <publishTime>01/25/2023 07:22:08</publishTime>
     </File>
+    <File Include="Models/dtsMantenimiento.xsc">
+      <publishTime>02/29/2024 09:27:10</publishTime>
+    </File>
+    <File Include="Models/dtsMantenimiento.xss">
+      <publishTime>02/29/2024 09:27:11</publishTime>
+    </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>03/02/2023 20:24:04</publishTime>
     </File>
@@ -439,7 +445,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/02/2023 20:24:04</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>01/09/2024 09:46:05</publishTime>
+      <publishTime>02/29/2024 15:47:35</publishTime>
     </File>
   </ItemGroup>
 </Project>
