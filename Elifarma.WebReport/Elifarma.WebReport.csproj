@@ -215,6 +215,7 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rptImportaciones.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Reports\CuentasPorPagar\rptRendicionCajaChica.cs">
       <AutoGen>True</AutoGen>
@@ -226,6 +227,7 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rptRendicionEntregaRendir.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Reports\rptCobranzasProgramadas.cs">
       <AutoGen>True</AutoGen>
