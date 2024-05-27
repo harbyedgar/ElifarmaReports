@@ -160,6 +160,7 @@
     <Compile Include="Code\ArchivoZip.cs" />
     <Compile Include="Code\DBManager.cs" />
     <Compile Include="Code\DbManagerExtend.cs" />
+    <Compile Include="Code\CuentasPorPagarReports.cs" />
     <Compile Include="Code\MantenimientoReports.cs" />
     <Compile Include="Code\InventarioReports.cs" />
     <Compile Include="Code\MantenimientoReports.cs" />
@@ -171,6 +172,11 @@
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CobranzasProgramadas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CobranzasProgramadas.xsd</DependentUpon>
     </Compile>
     <Compile Include="Models\dstKardexValorizado.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -193,6 +199,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dstProduccion.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Models\dstRegistroCompra.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dstRegistroCompra.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Models\dtsMantenimiento.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -200,6 +211,28 @@
     </Compile>
     <Compile Include="Models\ReportFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\CuentasPorPagar\rptImportaciones.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptImportaciones.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CuentasPorPagar\rptRendicionCajaChica.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptRendicionCajaChica.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CuentasPorPagar\rptRendicionEntregaRendir.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptRendicionEntregaRendir.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptCobranzasProgramadas.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptCobranzasProgramadas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Reports\rptDocumentosPorPagarTesoreria.cs">
       <DependentUpon>rptDocumentosPorPagarTesoreria.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -283,6 +316,17 @@
     <Content Include="Models\dstKardexValorizado.xsc">
       <DependentUpon>dstKardexValorizado.xsd</DependentUpon>
     </Content>
+    <Content Include="Models\CobranzasProgramadas.xsc">
+      <DependentUpon>CobranzasProgramadas.xsd</DependentUpon>
+    </Content>
+    <None Include="Models\CobranzasProgramadas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CobranzasProgramadas.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Models\CobranzasProgramadas.xss">
+      <DependentUpon>CobranzasProgramadas.xsd</DependentUpon>
+    </Content>
     <None Include="Models\dstKardexValorizado.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -312,6 +356,17 @@
     </Content>
     <Content Include="Models\dtsMantenimiento.xsc">
       <DependentUpon>dtsMantenimiento.xsd</DependentUpon>
+    </Content>
+    <Content Include="Models\dstRegistroCompra.xsc">
+      <DependentUpon>dstRegistroCompra.xsd</DependentUpon>
+    </Content>
+    <None Include="Models\dstRegistroCompra.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dstRegistroCompra.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Models\dstRegistroCompra.xss">
+      <DependentUpon>dstRegistroCompra.xsd</DependentUpon>
     </Content>
     <None Include="Models\dtsMantenimiento.xsd">
       <SubType>Designer</SubType>
@@ -353,6 +408,22 @@
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Reports\CuentasPorPagar\rptImportaciones.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptImportaciones.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CuentasPorPagar\rptRendicionCajaChica.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptRendicionCajaChica.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CuentasPorPagar\rptRendicionEntregaRendir.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptRendicionEntregaRendir.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptCobranzasProgramadas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptCobranzasProgramadas.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\rptDocumentosPorPagarTesoreria.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptDocumentosPorPagarTesoreria.cs</LastGenOutput>
