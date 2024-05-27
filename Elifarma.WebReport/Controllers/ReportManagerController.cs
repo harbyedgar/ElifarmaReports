@@ -15,6 +15,7 @@ namespace Elifarma.WebReport.Controllers
             ProduccionReports objProduccionReports = new ProduccionReports();
             InventarioReports objInventarioReports = new InventarioReports();
             MantenimientoReports objMantenimientoReports = new MantenimientoReports();
+            CuentasPorPagarReports objCuentasPorPagarReports = new CuentasPorPagarReports();
             ReportFile reportefile = new ReportFile();
 
             if (request.report.ToUpper() == "PROGRAMAPRODUCCION")
@@ -29,7 +30,14 @@ namespace Elifarma.WebReport.Controllers
             {
                 reportefile = objMantenimientoReports.OrdenTrabajo(request);
             }
-
+            else if (request.report.ToUpper() == "REGISTROCOMPRA")
+            {
+                reportefile = objCuentasPorPagarReports.RegistroCompras(request);
+            }
+            else if (request.report.ToUpper() == "COBRANZAPROGRAMADA")
+            {
+                reportefile = objCuentasPorPagarReports.CobranzaProgramada(request);
+            }
             try
             {
                 Byte[] bytes = File.ReadAllBytes(reportefile.reportlocation);
