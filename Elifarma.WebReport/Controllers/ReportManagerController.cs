@@ -38,6 +38,14 @@ namespace Elifarma.WebReport.Controllers
             {
                 reportefile = objCuentasPorPagarReports.CobranzaProgramada(request);
             }
+            else if (request.report.ToUpper() == "RENDICIONCAJACHICA")
+            {
+                reportefile = objCuentasPorPagarReports.RendicionCajaChica(request);
+            }
+            else if (request.report.ToUpper() == "COBRANZAPROGRAMADA")
+            {
+                reportefile = objCuentasPorPagarReports.CobranzaProgramada(request);
+            }
             try
             {
                 Byte[] bytes = File.ReadAllBytes(reportefile.reportlocation);

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dstProduccion" targetNamespace="http://tempuri.org/dstProduccion.xsd" xmlns:mstns="http://tempuri.org/dstProduccion.xsd" xmlns="http://tempuri.org/dstProduccion.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dstProduccion" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dstProduccion" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dstProduccion">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RegistroRendicion" msprop:Generator_RowEvHandlerName="RegistroRendicionRowChangeEventHandler" msprop:Generator_RowDeletedName="RegistroRendicionRowDeleted" msprop:Generator_RowDeletingName="RegistroRendicionRowDeleting" msprop:Generator_RowEvArgName="RegistroRendicionRowChangeEvent" msprop:Generator_TablePropName="RegistroRendicion" msprop:Generator_RowChangedName="RegistroRendicionRowChanged" msprop:Generator_UserTableName="RegistroRendicion" msprop:Generator_RowChangingName="RegistroRendicionRowChanging" msprop:Generator_RowClassName="RegistroRendicionRow" msprop:Generator_TableClassName="RegistroRendicionDataTable" msprop:Generator_TableVarName="tableRegistroRendicion">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnVarNameInTable="columnId" type="xs:string" />
+              <xs:element name="Anio" msprop:Generator_ColumnPropNameInTable="AnioColumn" msprop:Generator_ColumnPropNameInRow="Anio" msprop:Generator_UserColumnName="Anio" msprop:Generator_ColumnVarNameInTable="columnAnio" type="xs:string" minOccurs="0" />
+              <xs:element name="Mes" msprop:Generator_ColumnPropNameInTable="MesColumn" msprop:Generator_ColumnPropNameInRow="Mes" msprop:Generator_UserColumnName="Mes" msprop:Generator_ColumnVarNameInTable="columnMes" type="xs:string" minOccurs="0" />
+              <xs:element name="NumeroRegistro" msprop:Generator_ColumnPropNameInTable="NumeroRegistroColumn" msprop:Generator_ColumnPropNameInRow="NumeroRegistro" msprop:Generator_UserColumnName="NumeroRegistro" msprop:Generator_ColumnVarNameInTable="columnNumeroRegistro" type="xs:string" minOccurs="0" />
+              <xs:element name="ImporteApertura" msprop:Generator_ColumnPropNameInTable="ImporteAperturaColumn" msprop:Generator_ColumnPropNameInRow="ImporteApertura" msprop:Generator_UserColumnName="ImporteApertura" msprop:Generator_ColumnVarNameInTable="columnImporteApertura" type="xs:string" minOccurs="0" />
+              <xs:element name="Moneda" msprop:Generator_ColumnPropNameInTable="MonedaColumn" msprop:Generator_ColumnPropNameInRow="Moneda" msprop:Generator_UserColumnName="Moneda" msprop:Generator_ColumnVarNameInTable="columnMoneda" type="xs:string" minOccurs="0" />
+              <xs:element name="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_UserColumnName="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" type="xs:string" minOccurs="0" />
+              <xs:element name="DocumentoSerie" msprop:Generator_ColumnPropNameInTable="DocumentoSerieColumn" msprop:Generator_ColumnPropNameInRow="DocumentoSerie" msprop:Generator_UserColumnName="DocumentoSerie" msprop:Generator_ColumnVarNameInTable="columnDocumentoSerie" type="xs:string" minOccurs="0" />
+              <xs:element name="Ruc" msprop:Generator_ColumnPropNameInTable="RucColumn" msprop:Generator_ColumnPropNameInRow="Ruc" msprop:Generator_UserColumnName="Ruc" msprop:Generator_ColumnVarNameInTable="columnRuc" type="xs:string" minOccurs="0" />
+              <xs:element name="RazonSocial" msprop:Generator_ColumnPropNameInTable="RazonSocialColumn" msprop:Generator_ColumnPropNameInRow="RazonSocial" msprop:Generator_UserColumnName="RazonSocial" msprop:Generator_ColumnVarNameInTable="columnRazonSocial" type="xs:string" minOccurs="0" />
+              <xs:element name="Glosa" msprop:Generator_ColumnPropNameInTable="GlosaColumn" msprop:Generator_ColumnPropNameInRow="Glosa" msprop:Generator_UserColumnName="Glosa" msprop:Generator_ColumnVarNameInTable="columnGlosa" type="xs:string" minOccurs="0" />
+              <xs:element name="ImporteSubtotal" msprop:Generator_ColumnPropNameInTable="ImporteSubtotalColumn" msprop:Generator_ColumnPropNameInRow="ImporteSubtotal" msprop:Generator_UserColumnName="ImporteSubtotal" msprop:Generator_ColumnVarNameInTable="columnImporteSubtotal" type="xs:string" minOccurs="0" />
+              <xs:element name="ImporteIgv" msprop:Generator_ColumnPropNameInTable="ImporteIgvColumn" msprop:Generator_ColumnPropNameInRow="ImporteIgv" msprop:Generator_UserColumnName="ImporteIgv" msprop:Generator_ColumnVarNameInTable="columnImporteIgv" type="xs:string" minOccurs="0" />
+              <xs:element name="ImporteTotal" msprop:Generator_ColumnPropNameInTable="ImporteTotalColumn" msprop:Generator_ColumnPropNameInRow="ImporteTotal" msprop:Generator_UserColumnName="ImporteTotal" msprop:Generator_ColumnVarNameInTable="columnImporteTotal" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:RegistroRendicion" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

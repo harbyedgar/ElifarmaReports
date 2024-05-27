@@ -134,7 +134,51 @@ namespace Elifarma.WebReport.Code
             return reportfile;
         }
 
+        public ReportFile RendicionCajaChica(RequestFilter request)
+        {
+            ReportFile reportfile = new ReportFile();
+            try
+            {
+                string tipo = request.report + "RCC_";
+                ReportDocument objReporte = new ReportDocument();
+                string report_path = WebUtils.ReportPath("rptRendicionCajaChica.rpt");
+                objReporte.Load(report_path);
+                DataSet dstDatos = new DataSet();
+                DbManager db = new DbManager();
+                DataTable dtProgramaProduccion = new DataTable();
 
+                List<DbSqlParameter> param = new List<DbSqlParameter>();
+                param.Add(new DbSqlParameter() { parametername = "@Id", parametervalue = request.id });
+
+                dtProgramaProduccion = db.ExecuteDataTable("Usp_Reporte_DocumentosRendicion", param, StatementType.STOREDPROCEDURE);
+
+                dtProgramaProduccion.TableName = "RendicionCajaChica";
+
+                dstDatos.Tables.Add(dtProgramaProduccion);
+
+                objReporte.SetDataSource(dstDatos);
+                string reportname = "Rendicion_CajaChica_" + ".pdf";
+                string reportlocation = WebUtils.get("ReportFileStorage") + "\\" + reportname;
+                objReporte.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, reportlocation);
+
+                //si llega a completar esta info, procede a guardar el reporte en BD y devuelve el contenido al cliente
+                reportfile.idreport = Guid.NewGuid().ToString();
+                reportfile.reportdate = DateTime.Now;
+                reportfile.reportlocation = reportlocation;
+                reportfile.reportname = reportname;
+                reportfile.fieldstatus = 1;
+                reportfile.userid = request.userid;
+
+                //Guardando el Reporte 
+                db.ReportFile.Add(reportfile);
+                db.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                reportfile.contentfile = ex.ToString();
+            }
+            return reportfile;
+        }
 
         //public ReportFile KardexValorizado(RequestFilter request)
         //{

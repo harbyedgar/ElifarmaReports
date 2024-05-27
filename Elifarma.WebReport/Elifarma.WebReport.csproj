@@ -191,6 +191,14 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Models\dstRegistroRendicion.cs">
+      <DependentUpon>dstRegistroRendicion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dstRegistroRendicion.Designer.cs">
+      <DependentUpon>dstRegistroRendicion.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Models\dstProduccion.cs">
       <DependentUpon>dstProduccion.xsd</DependentUpon>
     </Compile>
@@ -347,6 +355,17 @@
     </None>
     <Content Include="Models\dstMantenimiento.xss">
       <DependentUpon>dstMantenimiento.xsd</DependentUpon>
+    </Content>
+    <Content Include="Models\dstRegistroRendicion.xsc">
+      <DependentUpon>dstRegistroRendicion.xsd</DependentUpon>
+    </Content>
+    <None Include="Models\dstRegistroRendicion.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dstRegistroRendicion.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Models\dstRegistroRendicion.xss">
+      <DependentUpon>dstRegistroRendicion.xsd</DependentUpon>
     </Content>
     <None Include="Models\dstProduccion.xsd">
       <Generator>MSDataSetGenerator</Generator>
