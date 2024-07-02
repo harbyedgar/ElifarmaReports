@@ -299,17 +299,7 @@ namespace Elifarma.WebReport.Models {
             
             private global::System.Data.DataColumn columninoperativo;
             
-            private global::System.Data.DataColumn columnelectrica;
-            
-            private global::System.Data.DataColumn columnppt;
-            
-            private global::System.Data.DataColumn columnventana;
-            
-            private global::System.Data.DataColumn columnpuerta;
-            
-            private global::System.Data.DataColumn columnsshh;
-            
-            private global::System.Data.DataColumn columnotros;
+            private global::System.Data.DataColumn columninfraestructura;
             
             private global::System.Data.DataColumn columnreferencia;
             
@@ -466,49 +456,9 @@ namespace Elifarma.WebReport.Models {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn electricaColumn {
+            public global::System.Data.DataColumn infraestructuraColumn {
                 get {
-                    return this.columnelectrica;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn pptColumn {
-                get {
-                    return this.columnppt;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn ventanaColumn {
-                get {
-                    return this.columnventana;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn puertaColumn {
-                get {
-                    return this.columnpuerta;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn sshhColumn {
-                get {
-                    return this.columnsshh;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn otrosColumn {
-                get {
-                    return this.columnotros;
+                    return this.columninfraestructura;
                 }
             }
             
@@ -720,12 +670,7 @@ namespace Elifarma.WebReport.Models {
                         string codigo, 
                         string operativo, 
                         string inoperativo, 
-                        string electrica, 
-                        string ppt, 
-                        string ventana, 
-                        string puerta, 
-                        string sshh, 
-                        string otros, 
+                        string infraestructura, 
                         string referencia, 
                         string recepcionadopor, 
                         string fecharecepcion, 
@@ -758,12 +703,7 @@ namespace Elifarma.WebReport.Models {
                         codigo,
                         operativo,
                         inoperativo,
-                        electrica,
-                        ppt,
-                        ventana,
-                        puerta,
-                        sshh,
-                        otros,
+                        infraestructura,
                         referencia,
                         recepcionadopor,
                         fecharecepcion,
@@ -816,12 +756,7 @@ namespace Elifarma.WebReport.Models {
                 this.columncodigo = base.Columns["codigo"];
                 this.columnoperativo = base.Columns["operativo"];
                 this.columninoperativo = base.Columns["inoperativo"];
-                this.columnelectrica = base.Columns["electrica"];
-                this.columnppt = base.Columns["ppt"];
-                this.columnventana = base.Columns["ventana"];
-                this.columnpuerta = base.Columns["puerta"];
-                this.columnsshh = base.Columns["sshh"];
-                this.columnotros = base.Columns["otros"];
+                this.columninfraestructura = base.Columns["infraestructura"];
                 this.columnreferencia = base.Columns["referencia"];
                 this.columnrecepcionadopor = base.Columns["recepcionadopor"];
                 this.columnfecharecepcion = base.Columns["fecharecepcion"];
@@ -867,18 +802,8 @@ namespace Elifarma.WebReport.Models {
                 base.Columns.Add(this.columnoperativo);
                 this.columninoperativo = new global::System.Data.DataColumn("inoperativo", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columninoperativo);
-                this.columnelectrica = new global::System.Data.DataColumn("electrica", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnelectrica);
-                this.columnppt = new global::System.Data.DataColumn("ppt", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnppt);
-                this.columnventana = new global::System.Data.DataColumn("ventana", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnventana);
-                this.columnpuerta = new global::System.Data.DataColumn("puerta", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnpuerta);
-                this.columnsshh = new global::System.Data.DataColumn("sshh", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnsshh);
-                this.columnotros = new global::System.Data.DataColumn("otros", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnotros);
+                this.columninfraestructura = new global::System.Data.DataColumn("infraestructura", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columninfraestructura);
                 this.columnreferencia = new global::System.Data.DataColumn("referencia", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnreferencia);
                 this.columnrecepcionadopor = new global::System.Data.DataColumn("recepcionadopor", typeof(string), null, global::System.Data.MappingType.Element);
@@ -1231,103 +1156,18 @@ namespace Elifarma.WebReport.Models {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string electrica {
+            public string infraestructura {
                 get {
                     try {
-                        return ((string)(this[this.tablecrdOrdenTrabajoMantenimiento.electricaColumn]));
+                        return ((string)(this[this.tablecrdOrdenTrabajoMantenimiento.infraestructuraColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'electrica\' de la tabla \'crdOrdenTrabajoMantenimiento\' es " +
-                                "DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'infraestructura\' de la tabla \'crdOrdenTrabajoMantenimient" +
+                                "o\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablecrdOrdenTrabajoMantenimiento.electricaColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string ppt {
-                get {
-                    try {
-                        return ((string)(this[this.tablecrdOrdenTrabajoMantenimiento.pptColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ppt\' de la tabla \'crdOrdenTrabajoMantenimiento\' es DBNull" +
-                                ".", e);
-                    }
-                }
-                set {
-                    this[this.tablecrdOrdenTrabajoMantenimiento.pptColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string ventana {
-                get {
-                    try {
-                        return ((string)(this[this.tablecrdOrdenTrabajoMantenimiento.ventanaColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ventana\' de la tabla \'crdOrdenTrabajoMantenimiento\' es DB" +
-                                "Null.", e);
-                    }
-                }
-                set {
-                    this[this.tablecrdOrdenTrabajoMantenimiento.ventanaColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string puerta {
-                get {
-                    try {
-                        return ((string)(this[this.tablecrdOrdenTrabajoMantenimiento.puertaColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'puerta\' de la tabla \'crdOrdenTrabajoMantenimiento\' es DBN" +
-                                "ull.", e);
-                    }
-                }
-                set {
-                    this[this.tablecrdOrdenTrabajoMantenimiento.puertaColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string sshh {
-                get {
-                    try {
-                        return ((string)(this[this.tablecrdOrdenTrabajoMantenimiento.sshhColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'sshh\' de la tabla \'crdOrdenTrabajoMantenimiento\' es DBNul" +
-                                "l.", e);
-                    }
-                }
-                set {
-                    this[this.tablecrdOrdenTrabajoMantenimiento.sshhColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string otros {
-                get {
-                    try {
-                        return ((string)(this[this.tablecrdOrdenTrabajoMantenimiento.otrosColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'otros\' de la tabla \'crdOrdenTrabajoMantenimiento\' es DBNu" +
-                                "ll.", e);
-                    }
-                }
-                set {
-                    this[this.tablecrdOrdenTrabajoMantenimiento.otrosColumn] = value;
+                    this[this.tablecrdOrdenTrabajoMantenimiento.infraestructuraColumn] = value;
                 }
             }
             
@@ -1793,74 +1633,14 @@ namespace Elifarma.WebReport.Models {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IselectricaNull() {
-                return this.IsNull(this.tablecrdOrdenTrabajoMantenimiento.electricaColumn);
+            public bool IsinfraestructuraNull() {
+                return this.IsNull(this.tablecrdOrdenTrabajoMantenimiento.infraestructuraColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetelectricaNull() {
-                this[this.tablecrdOrdenTrabajoMantenimiento.electricaColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IspptNull() {
-                return this.IsNull(this.tablecrdOrdenTrabajoMantenimiento.pptColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetpptNull() {
-                this[this.tablecrdOrdenTrabajoMantenimiento.pptColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsventanaNull() {
-                return this.IsNull(this.tablecrdOrdenTrabajoMantenimiento.ventanaColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetventanaNull() {
-                this[this.tablecrdOrdenTrabajoMantenimiento.ventanaColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IspuertaNull() {
-                return this.IsNull(this.tablecrdOrdenTrabajoMantenimiento.puertaColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetpuertaNull() {
-                this[this.tablecrdOrdenTrabajoMantenimiento.puertaColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IssshhNull() {
-                return this.IsNull(this.tablecrdOrdenTrabajoMantenimiento.sshhColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetsshhNull() {
-                this[this.tablecrdOrdenTrabajoMantenimiento.sshhColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsotrosNull() {
-                return this.IsNull(this.tablecrdOrdenTrabajoMantenimiento.otrosColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetotrosNull() {
-                this[this.tablecrdOrdenTrabajoMantenimiento.otrosColumn] = global::System.Convert.DBNull;
+            public void SetinfraestructuraNull() {
+                this[this.tablecrdOrdenTrabajoMantenimiento.infraestructuraColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
