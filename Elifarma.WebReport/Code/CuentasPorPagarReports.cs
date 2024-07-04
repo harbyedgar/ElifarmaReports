@@ -1,5 +1,6 @@
 ﻿using CrystalDecisions.CrystalReports.Engine;
 using Elifarma.WebReport.Models;
+using Elifarma.WebReport.Reports;
 using Microsoft.Win32;
 using NPOI.POIFS.Crypt.Dsig;
 using NPOI.SS.Formula.Functions;
@@ -179,6 +180,101 @@ namespace Elifarma.WebReport.Code
             }
             return reportfile;
         }
+
+        public ReportFile Importaciones(RequestFilter request)
+        {
+            ReportFile reportfile = new ReportFile();
+            ReportDocument objReporte = new ReportDocument();
+            try
+            {
+                string report_path = string.Empty;
+                string storedname = "";
+                report_path = WebUtils.ReportPath("rptImportaciones.rpt");
+                storedname = "Usp_Reporte_Importaciones";
+                objReporte.Load(report_path);
+               
+                DataSet dstDatos = new DataSet();
+                DbManager db = new DbManager();
+                DataTable dtImportacion = new DataTable();
+                
+                List<DbSqlParameter> param = new List<DbSqlParameter>();
+                param.Add(new DbSqlParameter() { parametername = "@importacionId", parametervalue = request.id });
+
+                dtImportacion = db.ExecuteDataTable(storedname, param, StatementType.STOREDPROCEDURE);
+                dtImportacion.TableName = "crdImportaciones";
+
+                dstDatos.Tables.Add(dtImportacion);
+
+                objReporte.SetDataSource(dstDatos);
+
+                string reportname = "Importaciones" + ".pdf";
+                string reportlocation = WebUtils.get("ReportFileStorage") + "\\" + reportname;
+                objReporte.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, reportlocation);
+
+                reportfile.idreport = Guid.NewGuid().ToString();
+                reportfile.reportdate = DateTime.Now;
+                reportfile.reportlocation = reportlocation;
+                reportfile.reportname = reportname;
+                reportfile.fieldstatus = 1;
+                reportfile.userid = request.userid;
+
+                //Guardando el Reporte 
+                db.ReportFile.Add(reportfile);
+                db.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                reportfile.contentfile = ex.ToString();
+            }
+            return reportfile;
+        }
+
+        //DataTable dtImportacionCabecera = new DataTable();
+        //DataTable dtImportacionDetalle = new DataTable();
+
+        //List<DbSqlParameter> param = new List<DbSqlParameter>();
+        //param.Add(new DbSqlParameter() { parametername = "@importacionId", parametervalue = request.id });
+
+        //dsImportacion = db.ExecuteDataSet("Usp_Reporte_Importaciones", param, StatementType.STOREDPROCEDURE);
+        //dtImportacionCabecera = db.ExecuteDataTable("Usp_Reporte_Importaciones", param, StatementType.STOREDPROCEDURE);
+        //        dtImportacionCabecera.TableName = "crdImportaciones";
+        //        dsImportacion.Tables.Add(dtImportacionCabecera);
+
+        //        //dtImportacionCabecera = dsImportacion.Tables[0];
+        //        //dtImportacionCabecera.TableName = "Importaciones";
+
+        //        //dsImportacion.Tables[0].TableName = "Importaciones";
+        //        //dsImportacion.Tables[1].TableName = "ImportacionesResumen";
+
+        //        //dtImportacionDetalle = dsImportacion.Tables[1];
+        //        //dtImportacionDetalle.TableName = "ImportacionesResumen";
+
+        //        //dsImportacion.Tables.Add(dtImportacionCabecera);
+        //        //dsImportacion.Tables.Add(dtImportacionDetalle);
+
+        //        objReporte.SetDataSource(dsImportacion);
+        //        string reportname = "Importacion" + ".pdf";
+        //        string reportlocation = WebUtils.get("ReportFileStorage") + "\\" + reportname;
+        //        objReporte.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, reportlocation);
+
+        //        //si llega a completar esta info, procede a guardar el reporte en BD y devuelve el contenido al cliente
+        //        reportfile.idreport = Guid.NewGuid().ToString();
+        //        reportfile.reportdate = DateTime.Now;
+        //        reportfile.reportlocation = reportlocation;
+        //        reportfile.reportname = reportname;
+        //        reportfile.fieldstatus = 1;
+        //        reportfile.userid = request.userid;
+
+        //        //Guardando el Reporte 
+        //        db.ReportFile.Add(reportfile);
+        //        db.SaveChanges();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        reportfile.contentfile = ex.ToString();
+        //    }
+        //    return reportfile;
+        //}
 
         //public ReportFile KardexValorizado(RequestFilter request)
         //{

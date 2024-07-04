@@ -16,6 +16,7 @@ namespace Elifarma.WebReport.Controllers
             InventarioReports objInventarioReports = new InventarioReports();
             MantenimientoReports objMantenimientoReports = new MantenimientoReports();
             CuentasPorPagarReports objCuentasPorPagarReports = new CuentasPorPagarReports();
+            ImportacionReports objImportacionReports = new ImportacionReports();
             ReportFile reportefile = new ReportFile();
 
             if (request.report.ToUpper() == "PROGRAMAPRODUCCION")
@@ -42,9 +43,9 @@ namespace Elifarma.WebReport.Controllers
             {
                 reportefile = objCuentasPorPagarReports.RendicionCajaChica(request);
             }
-            else if (request.report.ToUpper() == "COBRANZAPROGRAMADA")
+            else if (request.report.ToUpper() == "IMPORTACIONES")
             {
-                reportefile = objCuentasPorPagarReports.CobranzaProgramada(request);
+                reportefile = objImportacionReports.Importaciones(request);
             }
             try
             {

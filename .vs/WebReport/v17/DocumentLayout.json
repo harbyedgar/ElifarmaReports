@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\SISTEMAS WEB REPORTES\\ElifarmaReports\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{01754E58-61AE-4A0B-A88E-040D734D935E}|Elifarma.WebReport\\Elifarma.WebReport.csproj|d:\\sistemas web reportes\\elifarmareports\\elifarma.webreport\\reports\\cuentasporpagar\\rptimportaciones.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
-      "RelativeMoniker": "D:0:0:{01754E58-61AE-4A0B-A88E-040D734D935E}|Elifarma.WebReport\\Elifarma.WebReport.csproj|solutionrelative:elifarma.webreport\\reports\\cuentasporpagar\\rptimportaciones.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 87,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -23,18 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "rptImportaciones.rpt",
-              "DocumentMoniker": "D:\\SISTEMAS WEB REPORTES\\ElifarmaReports\\Elifarma.WebReport\\Reports\\CuentasPorPagar\\rptImportaciones.rpt",
-              "RelativeDocumentMoniker": "Elifarma.WebReport\\Reports\\CuentasPorPagar\\rptImportaciones.rpt",
-              "ToolTip": "D:\\SISTEMAS WEB REPORTES\\ElifarmaReports\\Elifarma.WebReport\\Reports\\CuentasPorPagar\\rptImportaciones.rpt",
-              "RelativeToolTip": "Elifarma.WebReport\\Reports\\CuentasPorPagar\\rptImportaciones.rpt",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIdSURBVDhPpZJNaBNBFMf/M7ub2NhajSDiwS96CbY2BykojaD0oF5s0YPgQYReLHgpeNCLYv0AexNRb1VUAkJcPXgQEUG89BIaxI9gqzGxH6QmXTef3Wx2nJkmNev25g8ebx7z3n/ezBv8F4wx0lhK7j6fYo3lmowMhl35HoRA3XGk/YvYW\u002BsA2vCrUEIwu1hEJltwmeDc8V5Plx4BAaXEY4J7LxLSt4q4BBS6Eiq8oGm3nXHZ1VCkS9pgfxc62/0yT\u002BASaNRLIWE6ieHB3H1EZsMyVhUKTXU37Yo0RZFeVQiuL14D1tnooBtQcEwcSO9d7aoVdefw5yFC2GG\u002BDsa/OTj228LYwmXejYrkzxkUsqZMNG0TfZkexA99lHETUqlYJ0rV5YEPqfKOG7Glo3MGRSTkx2T4JNp2\u002BzGfmMf3JzNAHijHarJIfz\u002BN0wMh2QoduRrVL9x6NqrWzUt3hjfjYMiHV1NVWNHHCJAOoMof3OBOt10T8XD24kOiv0uynFFkp8ZTrPv8NNs3\u002BpXtifawUmWZWbU6q9l16Z\u002B\u002BTXrHOHHzDPP7ND6iNvSHAtjYrkLTNDzqfQleBIU/rDhdeI1Po4l7JpyqDSTSDoKdPmwLqqhaNdh2vbHrxXWhidcZ9mXBj3yJYr3Pwf7tBnL5HLZu2YRA4O/nERzp2yVrXQJiIhWrdsUwy92/lorZyURqLP4p/YZv/eBXLK9ktQL8AbhJ7xVosbKmAAAAAElFTkSuQmCC",
-              "WhenOpened": "2024-05-23T20:48:55.02Z",
-              "EditorCaption": ""
             }
           ]
         },
