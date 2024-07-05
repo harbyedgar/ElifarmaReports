@@ -110,6 +110,8 @@ D:\SISTEMAS WEB REPORTES\ElifarmaReports\Elifarma.WebReport\obj\Debug\Elifarma.W
 D:\SISTEMAS WEB REPORTES\ElifarmaReports\Elifarma.WebReport\obj\Debug\Elifarma.35A2A16B.Up2Date
 D:\SISTEMAS WEB REPORTES\ElifarmaReports\Elifarma.WebReport\obj\Debug\Elifarma.WebReport.dll
 D:\SISTEMAS WEB REPORTES\ElifarmaReports\Elifarma.WebReport\obj\Debug\Elifarma.WebReport.pdb
+D:\REPORTES WEBELIFARMA\Elifarma.WebReport\obj\Debug\Elifarma.WebReport.csproj.AssemblyReference.cache
+D:\REPORTES WEBELIFARMA\Elifarma.WebReport\obj\Debug\Elifarma.WebReport.csproj.CoreCompileInputs.cache
 D:\REPORTES WEBELIFARMA\Elifarma.WebReport\bin\Reports\rptKardexValorizado.rpt
 D:\REPORTES WEBELIFARMA\Elifarma.WebReport\bin\Reports\rptKardexValorizadoResumen.rpt
 D:\REPORTES WEBELIFARMA\Elifarma.WebReport\bin\Reports\rptKardexValorizadoxOp.rpt
@@ -217,8 +219,6 @@ D:\REPORTES WEBELIFARMA\Elifarma.WebReport\bin\es\System.Web.Razor.resources.dll
 D:\REPORTES WEBELIFARMA\Elifarma.WebReport\bin\es\System.Web.WebPages.resources.dll
 D:\REPORTES WEBELIFARMA\Elifarma.WebReport\bin\es\System.Web.WebPages.Deployment.resources.dll
 D:\REPORTES WEBELIFARMA\Elifarma.WebReport\bin\es\System.Web.WebPages.Razor.resources.dll
-D:\REPORTES WEBELIFARMA\Elifarma.WebReport\obj\Debug\Elifarma.WebReport.csproj.AssemblyReference.cache
-D:\REPORTES WEBELIFARMA\Elifarma.WebReport\obj\Debug\Elifarma.WebReport.csproj.CoreCompileInputs.cache
 D:\REPORTES WEBELIFARMA\Elifarma.WebReport\obj\Debug\Elifarma.WebReport.csproj.CopyComplete
 D:\REPORTES WEBELIFARMA\Elifarma.WebReport\obj\Debug\Elifarma.WebReport.dll
 D:\REPORTES WEBELIFARMA\Elifarma.WebReport\obj\Debug\Elifarma.WebReport.pdb

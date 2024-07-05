@@ -22,6 +22,7 @@ namespace Elifarma.WebReport.Code
                 DbManager db = new DbManager();
                 List<DbSqlParameter> param = new List<DbSqlParameter>();
                 param.Add(new DbSqlParameter() { parametername = "@importacionId", parametervalue = request.id });
+                param.Add(new DbSqlParameter() { parametername = "@monedaId", parametervalue = request.monedaId });
 
                 //dt = db.ExecuteDataTable("Usp_Reporte_Importaciones", param, StatementType.STOREDPROCEDURE);
                 //dt.TableName = "crdImportaciones";
