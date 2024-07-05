@@ -43,6 +43,7 @@ namespace Elifarma.WebReport.Code
         public string  LP_RELACION_LOTE { get; set; }
         public string LP_RELACION_ID_TRANSACCION { get; set; }
         public string LP_NUM_OT { get; set; }
+        public string monedaId { get; set; }
 
     }
 }

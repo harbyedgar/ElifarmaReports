@@ -386,6 +386,16 @@ namespace Elifarma.WebReport.Models {
             
             private global::System.Data.DataColumn columnGastoDocumentoDescripcion;
             
+            private global::System.Data.DataColumn columnPeriodo;
+            
+            private global::System.Data.DataColumn columnPeriodoDescripcion;
+            
+            private global::System.Data.DataColumn columnIncotermDescripcion;
+            
+            private global::System.Data.DataColumn columnRegistroCompraGlosa;
+            
+            private global::System.Data.DataColumn columnImportacionConceptoDescripcion;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public crdImportacionesDataTable() {
@@ -709,6 +719,46 @@ namespace Elifarma.WebReport.Models {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn PeriodoColumn {
+                get {
+                    return this.columnPeriodo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn PeriodoDescripcionColumn {
+                get {
+                    return this.columnPeriodoDescripcion;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn IncotermDescripcionColumn {
+                get {
+                    return this.columnIncotermDescripcion;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn RegistroCompraGlosaColumn {
+                get {
+                    return this.columnRegistroCompraGlosa;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn ImportacionConceptoDescripcionColumn {
+                get {
+                    return this.columnImportacionConceptoDescripcion;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -780,7 +830,12 @@ namespace Elifarma.WebReport.Models {
                         string GastoGlosa, 
                         string GastoNumeroDocumento, 
                         string GastoDocumentoSigla, 
-                        string GastoDocumentoDescripcion) {
+                        string GastoDocumentoDescripcion, 
+                        string Periodo, 
+                        string PeriodoDescripcion, 
+                        string IncotermDescripcion, 
+                        string RegistroCompraGlosa, 
+                        string ImportacionConceptoDescripcion) {
                 crdImportacionesRow rowcrdImportacionesRow = ((crdImportacionesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Id,
@@ -818,7 +873,12 @@ namespace Elifarma.WebReport.Models {
                         GastoGlosa,
                         GastoNumeroDocumento,
                         GastoDocumentoSigla,
-                        GastoDocumentoDescripcion};
+                        GastoDocumentoDescripcion,
+                        Periodo,
+                        PeriodoDescripcion,
+                        IncotermDescripcion,
+                        RegistroCompraGlosa,
+                        ImportacionConceptoDescripcion};
                 rowcrdImportacionesRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowcrdImportacionesRow);
                 return rowcrdImportacionesRow;
@@ -884,6 +944,11 @@ namespace Elifarma.WebReport.Models {
                 this.columnGastoNumeroDocumento = base.Columns["GastoNumeroDocumento"];
                 this.columnGastoDocumentoSigla = base.Columns["GastoDocumentoSigla"];
                 this.columnGastoDocumentoDescripcion = base.Columns["GastoDocumentoDescripcion"];
+                this.columnPeriodo = base.Columns["Periodo"];
+                this.columnPeriodoDescripcion = base.Columns["PeriodoDescripcion"];
+                this.columnIncotermDescripcion = base.Columns["IncotermDescripcion"];
+                this.columnRegistroCompraGlosa = base.Columns["RegistroCompraGlosa"];
+                this.columnImportacionConceptoDescripcion = base.Columns["ImportacionConceptoDescripcion"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -961,6 +1026,16 @@ namespace Elifarma.WebReport.Models {
                 base.Columns.Add(this.columnGastoDocumentoSigla);
                 this.columnGastoDocumentoDescripcion = new global::System.Data.DataColumn("GastoDocumentoDescripcion", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnGastoDocumentoDescripcion);
+                this.columnPeriodo = new global::System.Data.DataColumn("Periodo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPeriodo);
+                this.columnPeriodoDescripcion = new global::System.Data.DataColumn("PeriodoDescripcion", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPeriodoDescripcion);
+                this.columnIncotermDescripcion = new global::System.Data.DataColumn("IncotermDescripcion", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIncotermDescripcion);
+                this.columnRegistroCompraGlosa = new global::System.Data.DataColumn("RegistroCompraGlosa", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRegistroCompraGlosa);
+                this.columnImportacionConceptoDescripcion = new global::System.Data.DataColumn("ImportacionConceptoDescripcion", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnImportacionConceptoDescripcion);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnId}, true));
                 this.columnId.AllowDBNull = false;
@@ -1137,6 +1212,28 @@ namespace Elifarma.WebReport.Models {
             private global::System.Data.DataColumn columnCostoUnitario1;
             
             private global::System.Data.DataColumn columnCostoUnitario2;
+            
+            private global::System.Data.DataColumn columnPrecioUnitario1;
+            
+            private global::System.Data.DataColumn columnPrecioUnitario2;
+            
+            private global::System.Data.DataColumn columnPorcentajeIncremento;
+            
+            private global::System.Data.DataColumn columnNombreGasto1;
+            
+            private global::System.Data.DataColumn columnNombreGasto2;
+            
+            private global::System.Data.DataColumn columnNombreGasto3;
+            
+            private global::System.Data.DataColumn columnNombreGasto4;
+            
+            private global::System.Data.DataColumn columnNombreGasto5;
+            
+            private global::System.Data.DataColumn columnNombreGasto6;
+            
+            private global::System.Data.DataColumn columnNombreGasto7;
+            
+            private global::System.Data.DataColumn columnNombreGasto8;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -1333,6 +1430,94 @@ namespace Elifarma.WebReport.Models {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn PrecioUnitario1Column {
+                get {
+                    return this.columnPrecioUnitario1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn PrecioUnitario2Column {
+                get {
+                    return this.columnPrecioUnitario2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn PorcentajeIncrementoColumn {
+                get {
+                    return this.columnPorcentajeIncremento;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn NombreGasto1Column {
+                get {
+                    return this.columnNombreGasto1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn NombreGasto2Column {
+                get {
+                    return this.columnNombreGasto2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn NombreGasto3Column {
+                get {
+                    return this.columnNombreGasto3;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn NombreGasto4Column {
+                get {
+                    return this.columnNombreGasto4;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn NombreGasto5Column {
+                get {
+                    return this.columnNombreGasto5;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn NombreGasto6Column {
+                get {
+                    return this.columnNombreGasto6;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn NombreGasto7Column {
+                get {
+                    return this.columnNombreGasto7;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn NombreGasto8Column {
+                get {
+                    return this.columnNombreGasto8;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1388,7 +1573,18 @@ namespace Elifarma.WebReport.Models {
                         string Gasto10, 
                         string CostoTotal1, 
                         string CostoUnitario1, 
-                        string CostoUnitario2) {
+                        string CostoUnitario2, 
+                        string PrecioUnitario1, 
+                        string PrecioUnitario2, 
+                        string PorcentajeIncremento, 
+                        string NombreGasto1, 
+                        string NombreGasto2, 
+                        string NombreGasto3, 
+                        string NombreGasto4, 
+                        string NombreGasto5, 
+                        string NombreGasto6, 
+                        string NombreGasto7, 
+                        string NombreGasto8) {
                 crdImportacionesResumenRow rowcrdImportacionesResumenRow = ((crdImportacionesResumenRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Id,
@@ -1410,7 +1606,18 @@ namespace Elifarma.WebReport.Models {
                         Gasto10,
                         CostoTotal1,
                         CostoUnitario1,
-                        CostoUnitario2};
+                        CostoUnitario2,
+                        PrecioUnitario1,
+                        PrecioUnitario2,
+                        PorcentajeIncremento,
+                        NombreGasto1,
+                        NombreGasto2,
+                        NombreGasto3,
+                        NombreGasto4,
+                        NombreGasto5,
+                        NombreGasto6,
+                        NombreGasto7,
+                        NombreGasto8};
                 rowcrdImportacionesResumenRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowcrdImportacionesResumenRow);
                 return rowcrdImportacionesResumenRow;
@@ -1460,6 +1667,17 @@ namespace Elifarma.WebReport.Models {
                 this.columnCostoTotal1 = base.Columns["CostoTotal1"];
                 this.columnCostoUnitario1 = base.Columns["CostoUnitario1"];
                 this.columnCostoUnitario2 = base.Columns["CostoUnitario2"];
+                this.columnPrecioUnitario1 = base.Columns["PrecioUnitario1"];
+                this.columnPrecioUnitario2 = base.Columns["PrecioUnitario2"];
+                this.columnPorcentajeIncremento = base.Columns["PorcentajeIncremento"];
+                this.columnNombreGasto1 = base.Columns["NombreGasto1"];
+                this.columnNombreGasto2 = base.Columns["NombreGasto2"];
+                this.columnNombreGasto3 = base.Columns["NombreGasto3"];
+                this.columnNombreGasto4 = base.Columns["NombreGasto4"];
+                this.columnNombreGasto5 = base.Columns["NombreGasto5"];
+                this.columnNombreGasto6 = base.Columns["NombreGasto6"];
+                this.columnNombreGasto7 = base.Columns["NombreGasto7"];
+                this.columnNombreGasto8 = base.Columns["NombreGasto8"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1505,6 +1723,28 @@ namespace Elifarma.WebReport.Models {
                 base.Columns.Add(this.columnCostoUnitario1);
                 this.columnCostoUnitario2 = new global::System.Data.DataColumn("CostoUnitario2", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCostoUnitario2);
+                this.columnPrecioUnitario1 = new global::System.Data.DataColumn("PrecioUnitario1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPrecioUnitario1);
+                this.columnPrecioUnitario2 = new global::System.Data.DataColumn("PrecioUnitario2", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPrecioUnitario2);
+                this.columnPorcentajeIncremento = new global::System.Data.DataColumn("PorcentajeIncremento", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPorcentajeIncremento);
+                this.columnNombreGasto1 = new global::System.Data.DataColumn("NombreGasto1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNombreGasto1);
+                this.columnNombreGasto2 = new global::System.Data.DataColumn("NombreGasto2", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNombreGasto2);
+                this.columnNombreGasto3 = new global::System.Data.DataColumn("NombreGasto3", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNombreGasto3);
+                this.columnNombreGasto4 = new global::System.Data.DataColumn("NombreGasto4", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNombreGasto4);
+                this.columnNombreGasto5 = new global::System.Data.DataColumn("NombreGasto5", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNombreGasto5);
+                this.columnNombreGasto6 = new global::System.Data.DataColumn("NombreGasto6", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNombreGasto6);
+                this.columnNombreGasto7 = new global::System.Data.DataColumn("NombreGasto7", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNombreGasto7);
+                this.columnNombreGasto8 = new global::System.Data.DataColumn("NombreGasto8", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNombreGasto8);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnImportacionId}, true));
                 this.columnId.AllowDBNull = false;
@@ -2242,6 +2482,90 @@ namespace Elifarma.WebReport.Models {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Periodo {
+                get {
+                    try {
+                        return ((string)(this[this.tablecrdImportaciones.PeriodoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Periodo\' de la tabla \'crdImportaciones\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablecrdImportaciones.PeriodoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string PeriodoDescripcion {
+                get {
+                    try {
+                        return ((string)(this[this.tablecrdImportaciones.PeriodoDescripcionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'PeriodoDescripcion\' de la tabla \'crdImportaciones\' es DBN" +
+                                "ull.", e);
+                    }
+                }
+                set {
+                    this[this.tablecrdImportaciones.PeriodoDescripcionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string IncotermDescripcion {
+                get {
+                    try {
+                        return ((string)(this[this.tablecrdImportaciones.IncotermDescripcionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'IncotermDescripcion\' de la tabla \'crdImportaciones\' es DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tablecrdImportaciones.IncotermDescripcionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string RegistroCompraGlosa {
+                get {
+                    try {
+                        return ((string)(this[this.tablecrdImportaciones.RegistroCompraGlosaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'RegistroCompraGlosa\' de la tabla \'crdImportaciones\' es DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tablecrdImportaciones.RegistroCompraGlosaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string ImportacionConceptoDescripcion {
+                get {
+                    try {
+                        return ((string)(this[this.tablecrdImportaciones.ImportacionConceptoDescripcionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ImportacionConceptoDescripcion\' de la tabla \'crdImportaci" +
+                                "ones\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablecrdImportaciones.ImportacionConceptoDescripcionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsEmpresaIdNull() {
                 return this.IsNull(this.tablecrdImportaciones.EmpresaIdColumn);
             }
@@ -2659,6 +2983,66 @@ namespace Elifarma.WebReport.Models {
             public void SetGastoDocumentoDescripcionNull() {
                 this[this.tablecrdImportaciones.GastoDocumentoDescripcionColumn] = global::System.Convert.DBNull;
             }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsPeriodoNull() {
+                return this.IsNull(this.tablecrdImportaciones.PeriodoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetPeriodoNull() {
+                this[this.tablecrdImportaciones.PeriodoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsPeriodoDescripcionNull() {
+                return this.IsNull(this.tablecrdImportaciones.PeriodoDescripcionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetPeriodoDescripcionNull() {
+                this[this.tablecrdImportaciones.PeriodoDescripcionColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsIncotermDescripcionNull() {
+                return this.IsNull(this.tablecrdImportaciones.IncotermDescripcionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetIncotermDescripcionNull() {
+                this[this.tablecrdImportaciones.IncotermDescripcionColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsRegistroCompraGlosaNull() {
+                return this.IsNull(this.tablecrdImportaciones.RegistroCompraGlosaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetRegistroCompraGlosaNull() {
+                this[this.tablecrdImportaciones.RegistroCompraGlosaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsImportacionConceptoDescripcionNull() {
+                return this.IsNull(this.tablecrdImportaciones.ImportacionConceptoDescripcionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetImportacionConceptoDescripcionNull() {
+                this[this.tablecrdImportaciones.ImportacionConceptoDescripcionColumn] = global::System.Convert.DBNull;
+            }
         }
         
         /// <summary>
@@ -2996,6 +3380,193 @@ namespace Elifarma.WebReport.Models {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string PrecioUnitario1 {
+                get {
+                    try {
+                        return ((string)(this[this.tablecrdImportacionesResumen.PrecioUnitario1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'PrecioUnitario1\' de la tabla \'crdImportacionesResumen\' es" +
+                                " DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablecrdImportacionesResumen.PrecioUnitario1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string PrecioUnitario2 {
+                get {
+                    try {
+                        return ((string)(this[this.tablecrdImportacionesResumen.PrecioUnitario2Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'PrecioUnitario2\' de la tabla \'crdImportacionesResumen\' es" +
+                                " DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablecrdImportacionesResumen.PrecioUnitario2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string PorcentajeIncremento {
+                get {
+                    try {
+                        return ((string)(this[this.tablecrdImportacionesResumen.PorcentajeIncrementoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'PorcentajeIncremento\' de la tabla \'crdImportacionesResume" +
+                                "n\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablecrdImportacionesResumen.PorcentajeIncrementoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string NombreGasto1 {
+                get {
+                    try {
+                        return ((string)(this[this.tablecrdImportacionesResumen.NombreGasto1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'NombreGasto1\' de la tabla \'crdImportacionesResumen\' es DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tablecrdImportacionesResumen.NombreGasto1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string NombreGasto2 {
+                get {
+                    try {
+                        return ((string)(this[this.tablecrdImportacionesResumen.NombreGasto2Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'NombreGasto2\' de la tabla \'crdImportacionesResumen\' es DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tablecrdImportacionesResumen.NombreGasto2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string NombreGasto3 {
+                get {
+                    try {
+                        return ((string)(this[this.tablecrdImportacionesResumen.NombreGasto3Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'NombreGasto3\' de la tabla \'crdImportacionesResumen\' es DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tablecrdImportacionesResumen.NombreGasto3Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string NombreGasto4 {
+                get {
+                    try {
+                        return ((string)(this[this.tablecrdImportacionesResumen.NombreGasto4Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'NombreGasto4\' de la tabla \'crdImportacionesResumen\' es DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tablecrdImportacionesResumen.NombreGasto4Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string NombreGasto5 {
+                get {
+                    try {
+                        return ((string)(this[this.tablecrdImportacionesResumen.NombreGasto5Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'NombreGasto5\' de la tabla \'crdImportacionesResumen\' es DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tablecrdImportacionesResumen.NombreGasto5Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string NombreGasto6 {
+                get {
+                    try {
+                        return ((string)(this[this.tablecrdImportacionesResumen.NombreGasto6Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'NombreGasto6\' de la tabla \'crdImportacionesResumen\' es DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tablecrdImportacionesResumen.NombreGasto6Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string NombreGasto7 {
+                get {
+                    try {
+                        return ((string)(this[this.tablecrdImportacionesResumen.NombreGasto7Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'NombreGasto7\' de la tabla \'crdImportacionesResumen\' es DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tablecrdImportacionesResumen.NombreGasto7Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string NombreGasto8 {
+                get {
+                    try {
+                        return ((string)(this[this.tablecrdImportacionesResumen.NombreGasto8Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'NombreGasto8\' de la tabla \'crdImportacionesResumen\' es DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tablecrdImportacionesResumen.NombreGasto8Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsArticuloIdNull() {
                 return this.IsNull(this.tablecrdImportacionesResumen.ArticuloIdColumn);
             }
@@ -3208,6 +3779,138 @@ namespace Elifarma.WebReport.Models {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetCostoUnitario2Null() {
                 this[this.tablecrdImportacionesResumen.CostoUnitario2Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsPrecioUnitario1Null() {
+                return this.IsNull(this.tablecrdImportacionesResumen.PrecioUnitario1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetPrecioUnitario1Null() {
+                this[this.tablecrdImportacionesResumen.PrecioUnitario1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsPrecioUnitario2Null() {
+                return this.IsNull(this.tablecrdImportacionesResumen.PrecioUnitario2Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetPrecioUnitario2Null() {
+                this[this.tablecrdImportacionesResumen.PrecioUnitario2Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsPorcentajeIncrementoNull() {
+                return this.IsNull(this.tablecrdImportacionesResumen.PorcentajeIncrementoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetPorcentajeIncrementoNull() {
+                this[this.tablecrdImportacionesResumen.PorcentajeIncrementoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsNombreGasto1Null() {
+                return this.IsNull(this.tablecrdImportacionesResumen.NombreGasto1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetNombreGasto1Null() {
+                this[this.tablecrdImportacionesResumen.NombreGasto1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsNombreGasto2Null() {
+                return this.IsNull(this.tablecrdImportacionesResumen.NombreGasto2Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetNombreGasto2Null() {
+                this[this.tablecrdImportacionesResumen.NombreGasto2Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsNombreGasto3Null() {
+                return this.IsNull(this.tablecrdImportacionesResumen.NombreGasto3Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetNombreGasto3Null() {
+                this[this.tablecrdImportacionesResumen.NombreGasto3Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsNombreGasto4Null() {
+                return this.IsNull(this.tablecrdImportacionesResumen.NombreGasto4Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetNombreGasto4Null() {
+                this[this.tablecrdImportacionesResumen.NombreGasto4Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsNombreGasto5Null() {
+                return this.IsNull(this.tablecrdImportacionesResumen.NombreGasto5Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetNombreGasto5Null() {
+                this[this.tablecrdImportacionesResumen.NombreGasto5Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsNombreGasto6Null() {
+                return this.IsNull(this.tablecrdImportacionesResumen.NombreGasto6Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetNombreGasto6Null() {
+                this[this.tablecrdImportacionesResumen.NombreGasto6Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsNombreGasto7Null() {
+                return this.IsNull(this.tablecrdImportacionesResumen.NombreGasto7Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetNombreGasto7Null() {
+                this[this.tablecrdImportacionesResumen.NombreGasto7Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsNombreGasto8Null() {
+                return this.IsNull(this.tablecrdImportacionesResumen.NombreGasto8Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetNombreGasto8Null() {
+                this[this.tablecrdImportacionesResumen.NombreGasto8Column] = global::System.Convert.DBNull;
             }
         }
         
