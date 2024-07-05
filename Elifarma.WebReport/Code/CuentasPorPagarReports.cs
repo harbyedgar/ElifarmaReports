@@ -146,14 +146,14 @@ namespace Elifarma.WebReport.Code
                 objReporte.Load(report_path);
                 DataSet dstDatos = new DataSet();
                 DbManager db = new DbManager();
-                DataTable dtRegisrroRendicion = new DataTable();
+                DataTable dtRegistroRendicion = new DataTable();
 
                 List<DbSqlParameter> param = new List<DbSqlParameter>();
                 param.Add(new DbSqlParameter() { parametername = "@Id", parametervalue = request.id });
 
-                dtRegisrroRendicion = db.ExecuteDataTable("Usp_Reporte_DocumentosRendicion", param, StatementType.STOREDPROCEDURE);
-                dtRegisrroRendicion.TableName = "RendicionCajaChica";
-                dstDatos.Tables.Add(dtRegisrroRendicion);
+                dtRegistroRendicion = db.ExecuteDataTable("Usp_Reporte_DocumentosRendicion", param, StatementType.STOREDPROCEDURE);
+                dtRegistroRendicion.TableName = "RegistroRendicion";
+                dstDatos.Tables.Add(dtRegistroRendicion);
 
                 objReporte.SetDataSource(dstDatos);
                 string reportname = "Rendicion_CajaChica_" + ".pdf";
@@ -190,14 +190,14 @@ namespace Elifarma.WebReport.Code
                 objReporte.Load(report_path);
                 DataSet dstDatos = new DataSet();
                 DbManager db = new DbManager();
-                DataTable dtRegisrroRendicion = new DataTable();
+                DataTable dtRegistroRendicion = new DataTable();
 
                 List<DbSqlParameter> param = new List<DbSqlParameter>();
                 param.Add(new DbSqlParameter() { parametername = "@Id", parametervalue = request.id });
 
-                dtRegisrroRendicion = db.ExecuteDataTable("Usp_Reporte_DocumentosRendicion", param, StatementType.STOREDPROCEDURE);
-                dtRegisrroRendicion.TableName = "RendicionEntregaRendir";
-                dstDatos.Tables.Add(dtRegisrroRendicion);
+                dtRegistroRendicion = db.ExecuteDataTable("Usp_Reporte_DocumentosRendicion", param, StatementType.STOREDPROCEDURE);
+                dtRegistroRendicion.TableName = "RegistroRendicion";
+                dstDatos.Tables.Add(dtRegistroRendicion);
 
                 objReporte.SetDataSource(dstDatos);
                 string reportname = "Rendicion_EntregaRendir_" + ".pdf";
@@ -234,14 +234,14 @@ namespace Elifarma.WebReport.Code
                 objReporte.Load(report_path);
                 DataSet dstDatos = new DataSet();
                 DbManager db = new DbManager();
-                DataTable dtRegisrroRendicion = new DataTable();
+                DataTable dtRegistroRendicion = new DataTable();
 
                 List<DbSqlParameter> param = new List<DbSqlParameter>();
                 param.Add(new DbSqlParameter() { parametername = "@Id", parametervalue = request.id });
 
-                dtRegisrroRendicion = db.ExecuteDataTable("Usp_Reporte_DocumentosRendicion", param, StatementType.STOREDPROCEDURE);
-                dtRegisrroRendicion.TableName = "RendicionEntregaRendir";
-                dstDatos.Tables.Add(dtRegisrroRendicion);
+                dtRegistroRendicion = db.ExecuteDataTable("Usp_Reporte_DocumentosRendicion", param, StatementType.STOREDPROCEDURE);
+                dtRegistroRendicion.TableName = "RegistroRendicion";
+                dstDatos.Tables.Add(dtRegistroRendicion);
 
                 objReporte.SetDataSource(dstDatos);
                 string reportname = "Rendicion_EntregaRendir_" + ".pdf";
