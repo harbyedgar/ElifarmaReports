@@ -230,16 +230,22 @@
       <DependentUpon>rptImportaciones.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Reports\CuentasPorPagar\rptRendicionCajaChica.cs">
+    <Compile Include="Reports\rptRendicionReembolso.cs">
+      <DependentUpon>rptRendicionReembolso.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\rptRendicionEntregaRendir.cs">
+      <DependentUpon>rptRendicionEntregaRendir.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\rptRendicionCajaChica.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rptRendicionCajaChica.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Reports\CuentasPorPagar\rptRendicionEntregaRendir.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>rptRendicionEntregaRendir.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Reports\rptCobranzasProgramadas.cs">
@@ -433,6 +439,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Reports\CuentasPorPagar\" />
     <Folder Include="Reports\Mantenimiento\" />
   </ItemGroup>
   <ItemGroup>
@@ -448,13 +455,17 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptImportaciones.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\CuentasPorPagar\rptRendicionCajaChica.rpt">
+    <EmbeddedResource Include="Reports\rptRendicionReembolso.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>rptRendicionCajaChica.cs</LastGenOutput>
+      <LastGenOutput>rptRendicionReembolso.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\CuentasPorPagar\rptRendicionEntregaRendir.rpt">
+    <EmbeddedResource Include="Reports\rptRendicionEntregaRendir.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptRendicionEntregaRendir.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptRendicionCajaChica.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptRendicionCajaChica.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\rptCobranzasProgramadas.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

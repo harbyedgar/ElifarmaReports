@@ -20,9 +20,9 @@ namespace Elifarma.WebReport.Models {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("dstRegistroRendicion")]
+    [global::System.Xml.Serialization.XmlRootAttribute("dstProduccion")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class dstRegistroRendicion : global::System.Data.DataSet {
+    public partial class dstProduccion : global::System.Data.DataSet {
         
         private RegistroRendicionDataTable tableRegistroRendicion;
         
@@ -30,7 +30,7 @@ namespace Elifarma.WebReport.Models {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public dstRegistroRendicion() {
+        public dstProduccion() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Elifarma.WebReport.Models {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected dstRegistroRendicion(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected dstProduccion(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace Elifarma.WebReport.Models {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            dstRegistroRendicion cln = ((dstRegistroRendicion)(base.Clone()));
+            dstProduccion cln = ((dstProduccion)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace Elifarma.WebReport.Models {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "dstRegistroRendicion";
+            this.DataSetName = "dstProduccion";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/dstRegistroRendicion.xsd";
+            this.Namespace = "http://tempuri.org/dstProduccion.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableRegistroRendicion = new RegistroRendicionDataTable();
@@ -225,7 +225,7 @@ namespace Elifarma.WebReport.Models {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            dstRegistroRendicion ds = new dstRegistroRendicion();
+            dstProduccion ds = new dstProduccion();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -306,6 +306,12 @@ namespace Elifarma.WebReport.Models {
             private global::System.Data.DataColumn columnImporteIgv;
             
             private global::System.Data.DataColumn columnImporteTotal;
+            
+            private global::System.Data.DataColumn columnImporteUtilizado;
+            
+            private global::System.Data.DataColumn columnImporteSaldo;
+            
+            private global::System.Data.DataColumn columnUsuario;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -454,6 +460,30 @@ namespace Elifarma.WebReport.Models {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn ImporteUtilizadoColumn {
+                get {
+                    return this.columnImporteUtilizado;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn ImporteSaldoColumn {
+                get {
+                    return this.columnImporteSaldo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn UsuarioColumn {
+                get {
+                    return this.columnUsuario;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -489,7 +519,24 @@ namespace Elifarma.WebReport.Models {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public RegistroRendicionRow AddRegistroRendicionRow(string Id, string Anio, string Mes, string NumeroRegistro, string ImporteApertura, string Moneda, string Fecha, string DocumentoSerie, string Ruc, string RazonSocial, string Glosa, string ImporteSubtotal, string ImporteIgv, string ImporteTotal) {
+            public RegistroRendicionRow AddRegistroRendicionRow(
+                        string Id, 
+                        string Anio, 
+                        string Mes, 
+                        string NumeroRegistro, 
+                        string ImporteApertura, 
+                        string Moneda, 
+                        string Fecha, 
+                        string DocumentoSerie, 
+                        string Ruc, 
+                        string RazonSocial, 
+                        string Glosa, 
+                        string ImporteSubtotal, 
+                        string ImporteIgv, 
+                        string ImporteTotal, 
+                        string ImporteUtilizado, 
+                        string ImporteSaldo, 
+                        string Usuario) {
                 RegistroRendicionRow rowRegistroRendicionRow = ((RegistroRendicionRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Id,
@@ -505,7 +552,10 @@ namespace Elifarma.WebReport.Models {
                         Glosa,
                         ImporteSubtotal,
                         ImporteIgv,
-                        ImporteTotal};
+                        ImporteTotal,
+                        ImporteUtilizado,
+                        ImporteSaldo,
+                        Usuario};
                 rowRegistroRendicionRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowRegistroRendicionRow);
                 return rowRegistroRendicionRow;
@@ -549,6 +599,9 @@ namespace Elifarma.WebReport.Models {
                 this.columnImporteSubtotal = base.Columns["ImporteSubtotal"];
                 this.columnImporteIgv = base.Columns["ImporteIgv"];
                 this.columnImporteTotal = base.Columns["ImporteTotal"];
+                this.columnImporteUtilizado = base.Columns["ImporteUtilizado"];
+                this.columnImporteSaldo = base.Columns["ImporteSaldo"];
+                this.columnUsuario = base.Columns["Usuario"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -582,6 +635,12 @@ namespace Elifarma.WebReport.Models {
                 base.Columns.Add(this.columnImporteIgv);
                 this.columnImporteTotal = new global::System.Data.DataColumn("ImporteTotal", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnImporteTotal);
+                this.columnImporteUtilizado = new global::System.Data.DataColumn("ImporteUtilizado", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnImporteUtilizado);
+                this.columnImporteSaldo = new global::System.Data.DataColumn("ImporteSaldo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnImporteSaldo);
+                this.columnUsuario = new global::System.Data.DataColumn("Usuario", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUsuario);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnId}, true));
                 this.columnId.AllowDBNull = false;
@@ -653,7 +712,7 @@ namespace Elifarma.WebReport.Models {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                dstRegistroRendicion ds = new dstRegistroRendicion();
+                dstProduccion ds = new dstProduccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -951,6 +1010,55 @@ namespace Elifarma.WebReport.Models {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string ImporteUtilizado {
+                get {
+                    try {
+                        return ((string)(this[this.tableRegistroRendicion.ImporteUtilizadoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ImporteUtilizado\' de la tabla \'RegistroRendicion\' es DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableRegistroRendicion.ImporteUtilizadoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string ImporteSaldo {
+                get {
+                    try {
+                        return ((string)(this[this.tableRegistroRendicion.ImporteSaldoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ImporteSaldo\' de la tabla \'RegistroRendicion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableRegistroRendicion.ImporteSaldoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Usuario {
+                get {
+                    try {
+                        return ((string)(this[this.tableRegistroRendicion.UsuarioColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Usuario\' de la tabla \'RegistroRendicion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableRegistroRendicion.UsuarioColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsAnioNull() {
                 return this.IsNull(this.tableRegistroRendicion.AnioColumn);
             }
@@ -1103,6 +1211,42 @@ namespace Elifarma.WebReport.Models {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetImporteTotalNull() {
                 this[this.tableRegistroRendicion.ImporteTotalColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsImporteUtilizadoNull() {
+                return this.IsNull(this.tableRegistroRendicion.ImporteUtilizadoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetImporteUtilizadoNull() {
+                this[this.tableRegistroRendicion.ImporteUtilizadoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsImporteSaldoNull() {
+                return this.IsNull(this.tableRegistroRendicion.ImporteSaldoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetImporteSaldoNull() {
+                this[this.tableRegistroRendicion.ImporteSaldoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsUsuarioNull() {
+                return this.IsNull(this.tableRegistroRendicion.UsuarioColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetUsuarioNull() {
+                this[this.tableRegistroRendicion.UsuarioColumn] = global::System.Convert.DBNull;
             }
         }
         

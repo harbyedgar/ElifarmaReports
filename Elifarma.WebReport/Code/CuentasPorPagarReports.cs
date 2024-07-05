@@ -140,25 +140,111 @@ namespace Elifarma.WebReport.Code
             ReportFile reportfile = new ReportFile();
             try
             {
-                string tipo = request.report + "RCC_";
+                string tipo = request.report + "CajaChica_";
                 ReportDocument objReporte = new ReportDocument();
                 string report_path = WebUtils.ReportPath("rptRendicionCajaChica.rpt");
                 objReporte.Load(report_path);
                 DataSet dstDatos = new DataSet();
                 DbManager db = new DbManager();
-                DataTable dtProgramaProduccion = new DataTable();
+                DataTable dtRegisrroRendicion = new DataTable();
 
                 List<DbSqlParameter> param = new List<DbSqlParameter>();
                 param.Add(new DbSqlParameter() { parametername = "@Id", parametervalue = request.id });
 
-                dtProgramaProduccion = db.ExecuteDataTable("Usp_Reporte_DocumentosRendicion", param, StatementType.STOREDPROCEDURE);
-
-                dtProgramaProduccion.TableName = "RendicionCajaChica";
-
-                dstDatos.Tables.Add(dtProgramaProduccion);
+                dtRegisrroRendicion = db.ExecuteDataTable("Usp_Reporte_DocumentosRendicion", param, StatementType.STOREDPROCEDURE);
+                dtRegisrroRendicion.TableName = "RendicionCajaChica";
+                dstDatos.Tables.Add(dtRegisrroRendicion);
 
                 objReporte.SetDataSource(dstDatos);
                 string reportname = "Rendicion_CajaChica_" + ".pdf";
+                string reportlocation = WebUtils.get("ReportFileStorage") + "\\" + reportname;
+                objReporte.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, reportlocation);
+
+                //si llega a completar esta info, procede a guardar el reporte en BD y devuelve el contenido al cliente
+                reportfile.idreport = Guid.NewGuid().ToString();
+                reportfile.reportdate = DateTime.Now;
+                reportfile.reportlocation = reportlocation;
+                reportfile.reportname = reportname;
+                reportfile.fieldstatus = 1;
+                reportfile.userid = request.userid;
+
+                //Guardando el Reporte 
+                db.ReportFile.Add(reportfile);
+                db.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                reportfile.contentfile = ex.ToString();
+            }
+            return reportfile;
+        }
+
+        public ReportFile RendicionEntregaRendir(RequestFilter request)
+        {
+            ReportFile reportfile = new ReportFile();
+            try
+            {
+                string tipo = request.report + "EntregaRendir_";
+                ReportDocument objReporte = new ReportDocument();
+                string report_path = WebUtils.ReportPath("rptRendicionEntregaRendir.rpt");
+                objReporte.Load(report_path);
+                DataSet dstDatos = new DataSet();
+                DbManager db = new DbManager();
+                DataTable dtRegisrroRendicion = new DataTable();
+
+                List<DbSqlParameter> param = new List<DbSqlParameter>();
+                param.Add(new DbSqlParameter() { parametername = "@Id", parametervalue = request.id });
+
+                dtRegisrroRendicion = db.ExecuteDataTable("Usp_Reporte_DocumentosRendicion", param, StatementType.STOREDPROCEDURE);
+                dtRegisrroRendicion.TableName = "RendicionEntregaRendir";
+                dstDatos.Tables.Add(dtRegisrroRendicion);
+
+                objReporte.SetDataSource(dstDatos);
+                string reportname = "Rendicion_EntregaRendir_" + ".pdf";
+                string reportlocation = WebUtils.get("ReportFileStorage") + "\\" + reportname;
+                objReporte.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, reportlocation);
+
+                //si llega a completar esta info, procede a guardar el reporte en BD y devuelve el contenido al cliente
+                reportfile.idreport = Guid.NewGuid().ToString();
+                reportfile.reportdate = DateTime.Now;
+                reportfile.reportlocation = reportlocation;
+                reportfile.reportname = reportname;
+                reportfile.fieldstatus = 1;
+                reportfile.userid = request.userid;
+
+                //Guardando el Reporte 
+                db.ReportFile.Add(reportfile);
+                db.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                reportfile.contentfile = ex.ToString();
+            }
+            return reportfile;
+        }
+
+        public ReportFile RendicionReembolso(RequestFilter request)
+        {
+            ReportFile reportfile = new ReportFile();
+            try
+            {
+                string tipo = request.report + "Reembolso_";
+                ReportDocument objReporte = new ReportDocument();
+                string report_path = WebUtils.ReportPath("rptRendicionReembolso.rpt");
+                objReporte.Load(report_path);
+                DataSet dstDatos = new DataSet();
+                DbManager db = new DbManager();
+                DataTable dtRegisrroRendicion = new DataTable();
+
+                List<DbSqlParameter> param = new List<DbSqlParameter>();
+                param.Add(new DbSqlParameter() { parametername = "@Id", parametervalue = request.id });
+
+                dtRegisrroRendicion = db.ExecuteDataTable("Usp_Reporte_DocumentosRendicion", param, StatementType.STOREDPROCEDURE);
+                dtRegisrroRendicion.TableName = "RendicionEntregaRendir";
+                dstDatos.Tables.Add(dtRegisrroRendicion);
+
+                objReporte.SetDataSource(dstDatos);
+                string reportname = "Rendicion_EntregaRendir_" + ".pdf";
                 string reportlocation = WebUtils.get("ReportFileStorage") + "\\" + reportname;
                 objReporte.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, reportlocation);
 

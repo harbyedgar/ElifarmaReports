@@ -43,6 +43,15 @@ namespace Elifarma.WebReport.Controllers
             {
                 reportefile = objCuentasPorPagarReports.RendicionCajaChica(request);
             }
+            else if (request.report.ToUpper() == "RENDICIONENTREGARENDIR")
+            {
+                reportefile = objCuentasPorPagarReports.RendicionEntregaRendir(request);
+            }
+            else if (request.report.ToUpper() == "RENDICIONREEMBOLSO")
+            {
+                reportefile = objCuentasPorPagarReports.RendicionReembolso(request);
+            }
+
             else if (request.report.ToUpper() == "IMPORTACIONES")
             {
                 reportefile = objImportacionReports.Importaciones(request);

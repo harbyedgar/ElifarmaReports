@@ -29,6 +29,9 @@
               <xs:element name="ImporteSubtotal" msprop:Generator_ColumnPropNameInTable="ImporteSubtotalColumn" msprop:Generator_ColumnPropNameInRow="ImporteSubtotal" msprop:Generator_UserColumnName="ImporteSubtotal" msprop:Generator_ColumnVarNameInTable="columnImporteSubtotal" type="xs:string" minOccurs="0" />
               <xs:element name="ImporteIgv" msprop:Generator_ColumnPropNameInTable="ImporteIgvColumn" msprop:Generator_ColumnPropNameInRow="ImporteIgv" msprop:Generator_UserColumnName="ImporteIgv" msprop:Generator_ColumnVarNameInTable="columnImporteIgv" type="xs:string" minOccurs="0" />
               <xs:element name="ImporteTotal" msprop:Generator_ColumnPropNameInTable="ImporteTotalColumn" msprop:Generator_ColumnPropNameInRow="ImporteTotal" msprop:Generator_UserColumnName="ImporteTotal" msprop:Generator_ColumnVarNameInTable="columnImporteTotal" type="xs:string" minOccurs="0" />
+              <xs:element name="ImporteUtilizado" msprop:Generator_ColumnPropNameInRow="ImporteUtilizado" msprop:Generator_ColumnPropNameInTable="ImporteUtilizadoColumn" msprop:Generator_ColumnVarNameInTable="columnImporteUtilizado" msprop:Generator_UserColumnName="ImporteUtilizado" type="xs:string" minOccurs="0" />
+              <xs:element name="ImporteSaldo" msprop:Generator_ColumnPropNameInRow="ImporteSaldo" msprop:Generator_ColumnPropNameInTable="ImporteSaldoColumn" msprop:Generator_ColumnVarNameInTable="columnImporteSaldo" msprop:Generator_UserColumnName="ImporteSaldo" type="xs:string" minOccurs="0" />
+              <xs:element name="Usuario" msprop:Generator_ColumnPropNameInRow="Usuario" msprop:Generator_ColumnPropNameInTable="UsuarioColumn" msprop:Generator_ColumnVarNameInTable="columnUsuario" msprop:Generator_UserColumnName="Usuario" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
